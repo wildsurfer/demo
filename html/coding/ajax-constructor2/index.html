@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title of the document</title>
+    </head>
+    <body>
+                <div id="result"></div>
+                <script type="text/javascript" language="javascript">
+                    function includeHtml(src, destination) {
+                    var iframe = document.createElement('iframe');
+                    iframe.onload = function() {
+                    destination.innerHTML = window.loader.document.body.innerHTML;
+                    }
+                    iframe.style.display = 'none';
+                    iframe.name = 'loader';
+                    iframe.src = src;
+                    document.body.appendChild(iframe);
+                    }
+                    includeHtml('sidebar.html', document.getElementById('result'));
+                </script>
+    </body>
+</html>

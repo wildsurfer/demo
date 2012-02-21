@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title of the document</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+                    $('#sidebar').load('sidebar.html');
+                    $('#header').load('header.html');
+                    });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"></div>
+            <div id="content">
+                <div id="sidebar"></div>
+                Content
+            </div>
+        </div>
+    </body>
+</html>
